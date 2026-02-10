@@ -49,7 +49,7 @@ first put an image inside the folder where you 'rmd' file is located
 
 Then type '![](full_image_filename_here){width="50%"}
 
-![](../images/resize.webp){width="100"}
+![](../../images/resize.webp){width="100"}
 
 #Rmarkdown 
 'RMarkdown' is just 'Markdown' with 'R' code woven in. 
@@ -80,7 +80,7 @@ Session> Set working directory > Source file location
 
 ```{r read data, }
 library(readr)
-energy<-read_csv("../data/IRENA data.csv",skip=1)
+energy<-read_csv("../../data/IRENA data.csv",skip=1)
 
 ```
 
@@ -93,7 +93,5 @@ energy %>% pull(Technology) %>% unique %>%sort
 energy %>% pull(`Country/area`)%>% unique 
 
 ```
-
-
 
 
